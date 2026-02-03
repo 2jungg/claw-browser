@@ -1,0 +1,7 @@
+[workspace]
+members = [
+    "claw_net",
+    "claw_layout",
+    "claw_ui",
+]
+resolver = "2"
