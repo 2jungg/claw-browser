@@ -4,11 +4,11 @@
 
 ## 🚀 진행 상황
 - [x] 0단계: 프로젝트 초기화 (Director 완료)
-- [ ] 1단계: **전체 시스템 아키텍처 및 모듈화 기획 (Gemini Pro 진행 중)**
-- [ ] 2단계: 핵심 엔진 병렬 개발 (Multi-Opus 가동 예정)
-  - [ ] `claw-net`: HTTP/TLS 네트워크 스택
-  - [ ] `claw-html`: HTML5 파서 및 DOM 트리 구축
-  - [ ] `claw-render`: CSS 엔진 및 GUI 렌더러
+- [x] 1단계: 전체 시스템 아키텍처 및 모듈화 기획 (Gemini Pro 완료)
+- [ ] 2단계: **핵심 엔진 병렬 개발 (Multi-Opus 가동 중)**
+  - [ ] `claw-net`: HTTP/TLS 네트워크 스택 (Worktree: `worktrees/net`)
+  - [ ] `claw-html`: HTML5 파서 및 DOM 트리 구축 (Worktree: `worktrees/layout`)
+  - [ ] `claw-render`: CSS 엔진 및 GUI 렌더러 (Worktree: `worktrees/ui`)
 - [ ] 3단계: 통합 및 브라우저 UI 개발
 - [ ] 4단계: 품질 검수 및 성능 최적화
 
