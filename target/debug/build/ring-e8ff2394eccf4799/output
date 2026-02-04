@@ -12,7 +12,7 @@ cargo:rerun-if-env-changed=CARGO_CFG_TARGET_OS
 cargo:rerun-if-env-changed=CARGO_CFG_TARGET_ENV
 cargo:rerun-if-env-changed=CARGO_CFG_TARGET_ENDIAN
 OPT_LEVEL = Some(0)
-OUT_DIR = Some(/home/ubuntu/clawd/projects/claw_browser/target/debug/build/ring-e8ff2394eccf4799/out)
+OUT_DIR = Some(/home/ubuntu/projects/claw_browser/target/debug/build/ring-e8ff2394eccf4799/out)
 TARGET = Some(aarch64-unknown-linux-gnu)
 CARGO_ENCODED_RUSTFLAGS = Some()
 HOST = Some(aarch64-unknown-linux-gnu)
@@ -40,7 +40,7 @@ cargo:rerun-if-env-changed=CFLAGS_aarch64-unknown-linux-gnu
 CFLAGS_aarch64-unknown-linux-gnu = None
 cargo:rustc-link-lib=static=ring_core_0_17_14_
 OPT_LEVEL = Some(0)
-OUT_DIR = Some(/home/ubuntu/clawd/projects/claw_browser/target/debug/build/ring-e8ff2394eccf4799/out)
+OUT_DIR = Some(/home/ubuntu/projects/claw_browser/target/debug/build/ring-e8ff2394eccf4799/out)
 TARGET = Some(aarch64-unknown-linux-gnu)
 CARGO_ENCODED_RUSTFLAGS = Some()
 HOST = Some(aarch64-unknown-linux-gnu)
@@ -67,7 +67,7 @@ CFLAGS_aarch64_unknown_linux_gnu = None
 cargo:rerun-if-env-changed=CFLAGS_aarch64-unknown-linux-gnu
 CFLAGS_aarch64-unknown-linux-gnu = None
 cargo:rustc-link-lib=static=ring_core_0_17_14__test
-cargo:rustc-link-search=native=/home/ubuntu/clawd/projects/claw_browser/target/debug/build/ring-e8ff2394eccf4799/out
+cargo:rustc-link-search=native=/home/ubuntu/projects/claw_browser/target/debug/build/ring-e8ff2394eccf4799/out
 cargo:rerun-if-changed=crypto/mem.c
 cargo:rerun-if-changed=crypto/limbs/limbs.inl
 cargo:rerun-if-changed=crypto/limbs/limbs.h

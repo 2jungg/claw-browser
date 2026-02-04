@@ -24,3 +24,17 @@ pub async fn fetch(url: &str) -> Result<Resource> {
         status,
     })
 }
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[tokio::test]
+    async fn test_fetch_status() {
+        // We test with a reliable domain
+        let res = fetch("https://www.google.com").await;
+        assert!(res.is_ok());
+        let resource = res.unwrap();
+        assert_eq!(resource.status, 200);
+    }
+}

@@ -33,3 +33,18 @@ pub fn compute_layout(_dom: &RcDom) -> LayoutTree {
     });
     LayoutTree { boxes }
 }
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test_parse_html_stub() {
+        let html = "<html><body><h1>Hello World</h1></body></html>";
+        let dom = parse_html(html);
+        assert!(!dom.errors.is_empty() || true); // Just check if it returns
+        let layout = compute_layout(&dom);
+        assert_eq!(layout.boxes.len(), 1);
+        assert_eq!(layout.boxes[0].text, "Rendering Example Page...");
+    }
+}

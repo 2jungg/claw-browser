@@ -28,11 +28,25 @@ impl BrowserWindow {
             .build(&event_loop)
             .unwrap();
 
-        // Basic wgpu initialization would go here. 
-        // For alpha, we just clear the screen as a demonstration.
-        
-        println!("Browser window started. (Simulating GPU Render)");
-        // In a real headless server, this might fail without Xvfb or similar.
-        // But for the user's local Windows environment, this is correct.
+        println!("ClawBrowser: Window initialized. Starting event loop...");
+
+        let _ = event_loop.run(move |event, elwt| {
+            match event {
+                Event::WindowEvent {
+                    ref event,
+                    window_id,
+                } if window_id == window.id() => match event {
+                    WindowEvent::CloseRequested => elwt.exit(),
+                    WindowEvent::RedrawRequested => {
+                        // Rendering logic here
+                    }
+                    _ => {}
+                },
+                Event::AboutToWait => {
+                    window.request_redraw();
+                }
+                _ => {}
+            }
+        });
     }
 }
